@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Green Inn</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Holiday Resort.css">
+<script src="jQuery.js"></script>
+<script src="jquery-ui.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+<div class="navbar">
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html" >About Us</a>
+  <a href="Search.html" class="left">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+<hr>
+
+<h1 align="center">Search Your Resort</h1>
+
+
+
+<div class="row">
+    <div class="container">
+  <img src="data:image/jpeg;base64,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" alt="Snow" style="width:100%" >
+</div>
+
+
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJs7aCoR_2h0Txgu_Z4rDH_JfqtlOew1JYxw&usqp=CAU" alt="Snow" style="width:100%">
+</div>
+
+
+<div class="container">
+  <img src="https://thriftynomads.com/wp-content/uploads/2018/07/Nine-Arches-Bridge.jpg" alt="Snow" style="width:100%">
+</div>
+
+
+<div class="container">
+  <img src="data:image/jpeg;base64,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" alt="Snow" style="width:100%">
+</div>
+</div>
+
+
+
+
+ <h3>Destination:</h3>
+   <select name="destination" id="destination">
+     <option value="The Alps">The Alps</option>
+     <option value="Europe">Europe</option>
+     <option value="Africa" selected>Africa</option>
+     <option value="Caribbean">Caribbean</option>
+     <option value="Indian Ocean">Indian Ocean</option>
+     <option value="N/C America">N/C America</option>
+     <option value="South America">South America</option>
+     <option value="Asia">Asia</option>
+   </select>
+   
+   
+  <div class="Time">
+    <h3>Available Date:</h3>
+    <select name="time" id="time">
+     <option value="January", "Feburary", "March", "April"> January - April (2020)</option>
+     <option value="May", "June", "July", "August">May - August (2020)</option>
+     <option value="September", "October", "November", "December">September - December (2020)</option>
+     <option value="Anytime" selected>Anytime</option>
+    </select>
+   </div> 
+   
+ <h3>Activities:</h3>
+   <select name="activities" id="activities">
+     <option value="Spa">Spa</option>
+     <option value="Horse riding">Horse riding</option>
+     <option value="Hiking" selected>Hiking</option>
+   <option value="Golf">Golf</option>
+     <option value="Scuba Diving">Scuba Diving</option>
+     <option value="Tennis"> Tennis</option>
+     <option value="Sailing">Sailing</option>
+     <option value="Water skiing">Water skiing</option>
+   </select>
+   
+   
+ <p class="box">  
+   <h3>Price Range:</h3>
+   <input type="text" id="amount" readonly class="goldSliderText">
+   </p>
+   <div id="slider-range"></div>
+     
+   <br/><br/>
+   
+  <button id="Search">Search</button> 
+
+ <div id="Placeholder"></div>
+
+
+<script>
+
+var data = { 
+
+  "properties": [
+        {
+            "id":"001",
+            "name":"Les Boucaniers",
+            "destination":"Caribbean",
+            "activities":"Spa",
+            "price":650000,
+           "lev":"Premium 5 stars",
+           "tenure":"Freehold",
+           "description":"In a remote beauty spot, savour the luxury of Mauritian lifestyle. The idyllic natural setting is enhanced by the sublime decor designed by Marc Hertrich and Nicolas Adnet, and the Resort's top-end comfort is perfectly reflected in its beautifully spacious rooms. The exceptional CINQ MONDES Spa* and luxurious overflow pool add an ideally Zen touch. The Resort is entirely devoted to fulfilling its guests' desires and offers discreet, personal service in its swimming areas, bars and 'Table Gourmet' restaurants.",
+           "location":"Martinique",
+           "picture":"pictures/caribbianreort.jpg",
+           "url":"Thecaribbeanresort.html",
+             "added": {
+                "month":"January",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"002",
+            "name":"La Plantation d'Albion",
+            "destination":"Indian Ocean",
+            "activities":"Tennis",
+            "price":299995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/indianocianresort.jpg",
+           "url":"Indianocean.html",
+             "added": {
+                "month":"January",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"003",
+            "name":"Peppermill Resort, Inc",
+            "destination":"N/C America",
+            "activities":"Scuba Diving",
+            "price":299995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A 2-minute walk from Virginia Lake, this sprawling, Tuscan-themed casino hotel is also 2 miles from Reno Airport.Sophisticated rooms feature custom mahogany furnishings and marble bathrooms, plus flat-screen TVs and Wi-Fi. Suites add living areas, and some include 4-poster beds, whirlpool tubs and/or hand-painted artwork. Room service is available.",
+           "location":"Mauritius",
+           "picture":"pictures/northamericaresort.jpeg",
+           "url":"Northandcentralamericaresort.html",
+             "added": {
+                "month":"May",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"004",
+            "name":"Shangri-La's Le Touessrok Resort & Spa",
+            "destination":"Africa",
+            "activities":"Spa",
+            "price":599995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/africa.jpg",
+           "url":"Africaresort.html",
+             "added": {
+                "month":"September",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"005",
+            "name":"Bürgenstock Resort",
+            "destination":"The Alps",
+            "activities":"Tennis",
+            "price":499995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/alpsresort.jpg",
+           "url":"Alpsresort.html",
+             "added": {
+                "month":"September",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"006",
+            "name":"Grand View Resort Beitou Hotel",
+            "destination":"Asia",
+            "activities":"Spa",
+            "price":699995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/asiaresort.jpg",
+           "url":"Asiaresort.html",
+             "added": {
+                "month":"January",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"007",
+            "name":"Marjal Costa Blanca Camping & Resort",
+            "destination":"Europe",
+            "activities":"Tennis",
+            "price":299995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/europeresort.jpg",
+           "url":"Europeresort.html",
+             "added": {
+                "month":"January",
+                "day":12,
+                "year":2020
+              }
+        },
+        {
+          "id":"008",
+            "name":"Marulhos Suítes Resort",
+            "destination":"South America",
+            "activities":"Golf",
+            "price":399995,
+           "lev":"Premium 4 stars",
+           "tenure":"Freehold",
+           "description":"A divers' paradise in the Baie du Marin, a legendary spot.Its bungalows are discreetly lodged in a tropical garden beside the white sand beach in superb Marin Bay. A magical site where you can enjoy a taste of everything, alone or with family or friends. Try water sports and the magnificent Club Med Spa*. You'll be enchanted by the exotic flavours of the local cuisine and the joyful spirit of the Caribbean.",
+           "location":"Mauritius",
+           "picture":"pictures/southamericaresort.jpg",
+           "url":"Southamericaresort.html",
+             "added": {
+                "month":"May",
+                "day":12,
+                "year":2020
+              }
+        },	
+    
+        
+]}
+
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+
+<hr>
+<div class="footer">
+  <h2>Green Inn</h2>
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Search.html">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+</html>

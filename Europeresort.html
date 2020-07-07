@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marjal Costa Blanca Camping & Resort</title>
+<link rel="stylesheet" type="text/css" href="Holiday Resort.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="jquery-ui-1.9.0.custom.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html" >About Us</a>
+  <a href="Search.html" class="left">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+<hr>
+<section style="background-color: #EFF0EE">
+	<h1 align="center">Marjal Costa Blanca Camping & Resort</h1>
+	<img src="pictures/europeresort.jpg" class="center">
+	<p><i><center>In a palatial high-rise building, this lavish hotel is 12 minutes' walk from the Taipei Fine Arts Museum, 10 km from the Taipei 101 skyscraper and an 8-minute walk from Jian Tan metro station. The refined rooms feature minibars, free Wi-Fi and flat-screens, plus balconies with city views. Suites add separate living rooms. Room service is provided.</center></i></p>
+</section>
+<hr>
+<section style="background-color: #EFF0EE">
+  <h1>Information</h1>
+  <table style="width:100%">
+  <tr>
+    <th>Comfort Level<br>5 Star</th>
+    <th>Available From<br>January</th>
+    <th>Activities<br>Tennis</th>
+    <th>Price<br>$ 299995</th>
+  </tr>
+</table>
+</section>
+<hr>
+<section style="background-color: #EFF0EE">
+  <h1>Features</h1>
+  <table style="width:100%">
+  <tr>
+    <th>Internet<br><br>WiFi is available in all areas.<br>FREE</th>
+    <th>Cleaning services<br><br>Daily housekeeping.<br>FREE</th>
+    <th>Business facilities<br><br>Fax/photocopying.<br>CHARGES MAY APPLY</th>
+  </tr>
+  <tr>
+    <th>Reception services<br><br>ATM/cash machine on site.<br>FREE</th>
+    <th>Transportation<br><br>Airport shuttle services.<br>FREE</th>
+    <th>Pets<br><br>Pets are allowed..</th>
+</table>
+</section>
+<hr>
+<section style="background-color: #EFF0EE">
+  <h1>Gallery</h1>
+
+<div class="container1">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <center><img src="pictures/1.jpg" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <center><img src="pictures/2.jpg" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <center><img src="pictures/3.jpg" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <center><img src="pictures/4.jpg" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <center><img src="pictures/5.jpg" style="width:50%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <center><img src="pictures/6.jpg" style="width:50%"></center>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+        <p> CLICK FOR ENLARGE</p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pictures/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="La Plantation d'Albion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pictures/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="La Plantation d'Albion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pictures/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="La Plantation d'Albion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pictures/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="La Plantation d'Albion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pictures/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="La Plantation d'Albion">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pictures/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="La Plantation d'Albion">
+    </div>
+  </div>
+</div>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</section>
+<hr>
+<section style="background-color: #EFF0EE">
+  <h1>Location</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.251433593364!2d-0.8141330847551927!3d38.18083327968747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63bb0d6bb5ad73%3A0x1d322b73e150330b!2sMarjal%20Costa%20Blanca%20Camping%20%26%20Resort!5e0!3m2!1sen!2slk!4v1578468263837!5m2!1sen!2slk" width="1420" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+
+</body>
+
+<hr>
+<div class="footer">
+  <h2>Green Inn</h2>
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Search.html">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+</html>

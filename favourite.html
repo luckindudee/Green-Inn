@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favourite List</title>
+	<link rel="stylesheet" type="text/css" href="Holiday Resort.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Search.html" class="left">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+<hr>
+
+
+<ul class="list">
+  <li id="Les Boucaniers">Les Boucaniers</li>
+  
+<section style="background-color: #EFF0EE">
+	<p >Caribbean</p>
+	<img src="pictures/caribbianreort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="La Plantation d'Albion">La Plantation d'Albion</li>
+  
+<section style="background-color: #EFF0EE">
+	<p>Indian Ocean</p >
+	<img src="pictures/indianocianresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Peppermill Resort, Inc">Peppermill Resort, Inc </li>
+  
+<section style="background-color: #EFF0EE">
+	<p > N/C America</p >
+	<img src="pictures/northamericaresort.jpeg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Shangri-La's Le Touessrok Resort & Spa">Shangri-La's Le Touessrok Resort & Spa</li>
+  
+<section style="background-color: #EFF0EE">
+	<p >Africa</p >
+	<img src="pictures/africaresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Bürgenstock Resort">Bürgenstock Resort </li>
+  
+<section style="background-color: #EFF0EE">
+	<p >The Alps</p >
+	<img src="pictures/alpsresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Grand View Resort Beitou Hotel">Grand View Resort Beitou Hotel</li>
+  
+<section style="background-color: #EFF0EE">
+	<p >Asia</p >
+	<img src="pictures/asiaresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Marjal Costa Blanca Camping & Resort">Marjal Costa Blanca Camping & Resort </li>
+  
+<section style="background-color: #EFF0EE">
+	<p  >Europe</p >
+	<img src="pictures/europeresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section>
+  
+  <li id="Marulhos Suítes Resort">Marulhos Suítes Resort</li>
+ 
+<section style="background-color: #EFF0EE">
+	<p >South America</p >
+	<img src="pictures/southamericaresort.jpg" class="center" width="500" height="400">
+	<p align="center">Tourism is travel for leisure, recreational and business purpose. Tourists can be defined as people who travel to and stay in places outside their usual surroundings for more than twenty-four hours and not more than one consecutive year for leisure, business and other purposes by the World Tourism Organization. Tourism is a known affair in human life. It has been an industry of vast dimensions and eventually supports economic and social growth. Tourism worldwide has experienced phenomenal growth. With more than 600 million people travelling annually, tourism is the world’s largest industry.</p>
+</section> 
+  
+  
+</ul>
+
+
+<script>
+
+// get favorites from local storage or empty array
+var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+// add class 'fav' to each favorite
+favorites.forEach(function(favorite) {
+  document.getElementById(favorite).className = 'fav';
+});
+// register click event listener
+document.querySelector('.list').addEventListener('click', function(e) {
+  var id = e.target.id,
+      item = e.target,
+      index = favorites.indexOf(id);
+  // return if target doesn't have an id (shouldn't happen)
+  if (!id) return;
+  // item is not favorite
+  if (index == -1) {
+    favorites.push(id);
+    item.className = 'fav';
+  // item is already favorite
+  } else {
+    favorites.splice(index, 1);
+    item.className = '';
+  }
+  // store array in local storage
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+});
+
+// local storage stores strings so we use JSON to stringify for storage and parse to get out of storage
+
+</script>
+
+<hr>
+<div class="footer">
+  <h2>Green Inn</h2>
+  <a href="contactUs.html">Contact Us</a>
+  <a href="About.html">About Us</a>
+  <a href="Search.html">Search</a>
+  <a href="index.html" class="left">Green Inn</a>
+</div>
+</body>
+</html>
